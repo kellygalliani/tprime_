@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>GOEVO Challenge</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-blue-800">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://cdn.greatpages.com.br/www.goevo.com.br/1680056907/imagens/desktop/148530_1_1669607611638430bbe5550.png" class="logo" alt="" width="30" height="24">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid list-section">
+        <div class="container pt-5 pb-5">
+            <div class="list-section__table-container p-4">
+                <img src="./assets/img.jpg" alt="" class="brand-detail">
+                <div class="list-section__table-group-header">
+                    <h1 class="list-section__title">Lista de Contatos</h1>
+                    <div class="">
+                        <input type="text" class="form-control" id="input-pesquisa" placeholder="Pesquisar">
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="list-section__table table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="list-section__table-header">Código</th>
+                                <th class="list-section__table-header">Nome</th>
+                                <th class="list-section__table-header">E-mail</th>
+                                <th class="list-section__table-header">Telefone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="animation">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_jcikwtux.json" class="lottie" background="transparent"  speed="1"  style="width: 400px; height: 400px;" hover loop autoplay></lottie-player>
+        </div>
+        <div class="form-total">
+            <div class="form p-4" style="background-color: white; border-radius: 8px; box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.64) "> 
+                <form id="form-contato" class="form-section__form">
+                    <img src="./assets/img.jpg" alt="" class="brand-detail-form">
+                  <h2 class="form-section__title">Adicionar novo contato</h2>
+                  <div class="form-group form-section__form-group mt-3">
+                    <label for="codigo" class="form-section__label">Código</label>
+                    <input type="text" class="form-control form-section__input" id="codigo" name="codigo" required>
+                  </div>
+                  <div class="form-group form-section__form-group mt-3">
+                    <label for="nome" class="form-section__label">Nome</label>
+                    <input type="text" class="form-control form-section__input" id="nome" name="nome" required>
+                    <span class="error"></span>
+                </div>
+                  <div class="form-group form-section__form-group mt-3">
+                    <label for="email" class="form-section__label">E-mail</label>
+                    <input type="email" class="form-control form-section__input" id="email" name="email" required>
+                    <span class="error"></span>
+                </div>
+                  <div class="form-group form-section__form-group mt-3">
+                    <label for="telefone" class="form-section__label">Telefone</label>
+                    <input type="text" class="form-control form-section__input" id="telefone" name="telefone" data-mask="(00) 00000-0000" required>
+                    <span class="error"></span>
+                </div>
+                  <button type="submit" class="btn btn-primary form-section__submit-btn mt-5 w-100">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </section>     
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.6/dist/sweetalert2.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./scripts/data.js"></script>
+      <script src="./scripts/scripts.js"></script>
+</body>
+</html>

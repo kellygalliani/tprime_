@@ -1,0 +1,99 @@
+.navbar{
+    background-color: rgb(27,20,100);
+}
+.navbar-brand{
+    width: 80px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+section.list-section{
+    background-image: url('https://cdn.greatpages.com.br/www.goevo.com.br/1680056907/imagens/desktop/148530_1_1669607611638430bbe5247.png'); 
+    background-size: cover; 
+    min-height: calc(100vh - 90px);
+}
+.list-section__table-container{
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.64); 
+    height: 100%;
+    max-height: 540px;
+    overflow-x: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list-section__table-group-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table-responsive{
+    overflow-wrap: break-word;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 100%;
+    max-width: 80px;
+}
+
+
+section.form-section{
+    display: flex;
+    background-color: aliceblue;
+    padding: 50px;
+}
+.form-total{
+    padding: 50px;
+}
+.form{
+    position: relative;
+    width: 100%;
+}
+.brand-detail, .brand-detail-form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    max-height: 12px;
+}
+.animation{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lottie{
+    max-width: 100%;
+}
+.error {
+    color: red;
+    display: none;
+  }
+@media(max-width: 1200px){
+    .btn{
+        max-width: 100%;
+    }
+}
+@media(max-width: 817px){
+    section.form-section{
+        display: flex;
+        justify-content: center;
+    }
+    .form-total{
+        padding: 10px;
+    }
+    .animation{
+        display: none;
+    }
+}
+
